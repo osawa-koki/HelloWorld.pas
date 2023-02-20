@@ -3,13 +3,15 @@ program Main;
 uses
   Output,
   Display,
-  Swap;
+  Swap,
+  ToNoSQL;
 
 const
   ARRAY_SIZE = 10;
 
 type
   IntegerArray = array[0..ARRAY_SIZE-1] of Integer;
+  StringArray = array[0..4] of String;
 
 var
   num1, num2, sum : integer;
@@ -17,6 +19,7 @@ var
   languages : array[1..5] of string;
   arr: IntegerArray;
   x, y : integer;
+  databases : StringArray;
 
 begin
   writeln('Hello, World!');
@@ -71,5 +74,28 @@ begin
   writeln('before: ', 'x(val) = ', x, ', y(var) = ', y);
   DoSwap(x, y);
   writeln('after : ', 'x(val) = ', x, ', y(var) = ', y);
+
+  // 配列の値渡しと参照渡し
+  databases[1] := 'Oracle';
+  databases[2] := 'MySQL';
+  databases[3] := 'PostgreSQL';
+  databases[4] := 'SQLite';
+  databases[5] := 'MariaDB';
+
+  writeln('before: ');
+  for i := 1 to 5 do
+    writeln('  ', databases[i]);
+
+  ToNoSQLByVal(databases);
+
+  writeln('by val: ');
+  for i := 1 to 5 do
+    writeln('  ', databases[i]);
+
+  ToNoSQLByRef(databases);
+
+  writeln('by ref: ');
+  for i := 1 to 5 do
+    writeln('  ', databases[i]);
 
 end.
