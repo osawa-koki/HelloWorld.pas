@@ -20,4 +20,4 @@ WORKDIR /app
 COPY . .
 RUN make
 
-CMD ["./bin/main"]
+CMD ["make", "run"]
