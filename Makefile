@@ -1,7 +1,13 @@
 # コンパイルするファイル
-SOURCE_FILES = $(wildcard ./src/*.pas)
+SOURCE_FILES = \
+    ./src/Display.pas \
+    ./src/Output.pas \
+    ./src/Swap.pas \
+    ./src/ToNoSQL.pas \
+    ./src/Main.pas
+
 # 出力先のバイナリファイル
-OUTPUT_FILE = ./bin/main
+OUTPUT_FILE = bin/main
 
 # デフォルトのターゲット：バイナリファイルをコンパイルする
 all: $(OUTPUT_FILE)
