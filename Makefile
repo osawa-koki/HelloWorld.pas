@@ -1,5 +1,5 @@
 # コンパイルするファイル
-SOURCE_FILE = ./src/main.pas
+SOURCE_FILES = $(wildcard ./src/*.pas)
 # 出力先のバイナリファイル
 OUTPUT_FILE = ./bin/main
 
@@ -7,8 +7,8 @@ OUTPUT_FILE = ./bin/main
 all: $(OUTPUT_FILE)
 
 # バイナリファイルをコンパイルするルール
-$(OUTPUT_FILE): $(SOURCE_FILE)
-	fpc -o$@ $<
+$(OUTPUT_FILE): $(SOURCE_FILES)
+	fpc -o$(OUTPUT_FILE) $^
 
 # バイナリファイルを実行するルール
 run: $(OUTPUT_FILE)
