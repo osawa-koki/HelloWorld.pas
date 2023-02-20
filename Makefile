@@ -12,4 +12,4 @@ $(OUTPUT_FILE): $(SOURCE_FILE)
 
 # ビルドをクリーンするルール
 clean:
-	rm -f $(OUTPUT_FILE)
+	find bin/ -type f -not -name '.gitkeep' -delete
