@@ -8,8 +8,8 @@ all: $(OUTPUT_FILE)
 
 # バイナリファイルをコンパイルするルール
 $(OUTPUT_FILE): $(SOURCE_FILE)
-    fpc -o$@ $<
+	fpc -o$@ $<
 
 # ビルドをクリーンするルール
 clean:
-    rm -f $(OUTPUT_FILE)
+	rm -f $(OUTPUT_FILE)
