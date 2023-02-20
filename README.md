@@ -1,6 +1,6 @@
 # HelloWorld.pas
 
-PascalでHelloWorldを表示するプログラムです。  
+🪳🪳🪳 PascalでHelloWorldを表示するプログラムです。  
 
 ## 環境構築
 
