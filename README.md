@@ -21,6 +21,7 @@ make run
 ---
 
 Dockerで実行する場合は以下のコマンドを実行します。  
+コンテナのビルドに10分程度かかることがあります。  
 
 ```shell
 docker build -t hello-world-pascal .
