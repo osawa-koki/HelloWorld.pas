@@ -10,6 +10,10 @@ all: $(OUTPUT_FILE)
 $(OUTPUT_FILE): $(SOURCE_FILE)
 	fpc -o$@ $<
 
+# バイナリファイルを実行するルール
+run: $(OUTPUT_FILE)
+	./$(OUTPUT_FILE)
+
 # ビルドをクリーンするルール
 clean:
 	find bin/ -type f -not -name '.gitkeep' -delete

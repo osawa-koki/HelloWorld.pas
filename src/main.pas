@@ -1,4 +1,4 @@
-program HelloWorld;
+program Main;
 var
   num1, num2, sum : integer;
 begin
