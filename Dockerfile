@@ -15,3 +15,6 @@ RUN ARCH=$(uname -m)-linux && \
     rm demo* doc* && \
     echo -e '\n' | ./install.sh && \
     rm -r /tmp/*
+
+RUN make
+CMD ["./bin/main"]
