@@ -2,7 +2,8 @@ program Main;
 
 uses
   Output,
-  Display;
+  Display,
+  Swap;
 
 const
   ARRAY_SIZE = 10;
@@ -15,6 +16,7 @@ var
   i, n : integer;
   languages : array[1..5] of string;
   arr: IntegerArray;
+  x, y : integer;
 
 begin
   writeln('Hello, World!');
@@ -62,5 +64,12 @@ begin
 
   // 配列の表示
   Show('Array', arr);
+
+  // 引数の値渡しと参照渡し
+  x := 10;
+  y := 20;
+  writeln('before: ', 'x(val) = ', x, ', y(var) = ', y);
+  DoSwap(x, y);
+  writeln('after : ', 'x(val) = ', x, ', y(var) = ', y);
 
 end.
