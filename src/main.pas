@@ -1,10 +1,21 @@
 program Main;
+
 uses
-  Output;
+  Output,
+  Display;
+
+const
+  ARRAY_SIZE = 10;
+
+type
+  IntegerArray = array[0..ARRAY_SIZE-1] of Integer;
+
 var
   num1, num2, sum : integer;
   i, n : integer;
   languages : array[1..5] of string;
+  arr: IntegerArray;
+
 begin
   writeln('Hello, World!');
 
@@ -42,5 +53,14 @@ begin
 
   // 関数の呼び出し
   PrintText('Hello Procedure!');
+
+  // 配列の初期化
+  for i := 0 to ARRAY_SIZE-1 do
+  begin
+    arr[i] := i;
+  end;
+
+  // 配列の表示
+  Show('Array', arr);
 
 end.

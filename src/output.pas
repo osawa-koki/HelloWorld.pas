@@ -12,6 +12,7 @@ uses
 procedure PrintText(text: string);
 begin
   writeln(text);
+  Exit;
 end;
 
 end.
