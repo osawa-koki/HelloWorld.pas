@@ -16,5 +16,8 @@ RUN ARCH=$(uname -m)-linux && \
     echo -e '\n' | ./install.sh && \
     rm -r /tmp/*
 
+WORKDIR /app
+COPY . .
 RUN make
+
 CMD ["./bin/main"]
