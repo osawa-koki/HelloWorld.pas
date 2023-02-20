@@ -12,8 +12,8 @@ Pascalのコンパイラを[FreePascal](https://www.freepascal.org/download.html
 ローカルにPascal開発環境を構築した場合には、以下のコマンドを実行します。  
 
 ```shell
-fpc -obin/main ./src/main.pas
-./bin/main
+make
+make run
 ```
 
 また、DevContainerに入った場合も上記のコマンドを実行すれば、プログラムのコンパイル・実行ができます。  
