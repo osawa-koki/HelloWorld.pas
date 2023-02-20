@@ -1,4 +1,6 @@
 program Main;
+uses
+  Output;
 var
   num1, num2, sum : integer;
   i, n : integer;
@@ -37,5 +39,8 @@ begin
   languages[5] := 'BASIC';
   for i := 1 to 5 do
     writeln(languages[i]);
+
+  // 関数の呼び出し
+  PrintText('Hello Procedure!');
 
 end.
