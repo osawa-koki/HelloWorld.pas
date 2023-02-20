@@ -98,4 +98,6 @@ begin
   for i := 1 to 5 do
     writeln('  ', databases[i]);
 
+  Halt(0);
+  
 end.
