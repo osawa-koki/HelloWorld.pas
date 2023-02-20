@@ -1,6 +1,7 @@
 # HelloWorld.pas
 
 🪳🪳🪳 PascalでHelloWorldを表示するプログラムです。  
+その他の、基本的な処理も記述しています。  
 
 ## 環境構築
 
