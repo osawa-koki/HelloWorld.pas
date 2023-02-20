@@ -2,6 +2,7 @@ program Main;
 var
   num1, num2, sum : integer;
   i, n : integer;
+  languages : array[1..5] of string;
 begin
   writeln('Hello, World!');
 
@@ -27,5 +28,14 @@ begin
   // ループ
   for i := 1 to n do
     writeln(i);
+
+  // 配列
+  languages[1] := 'COBOL';
+  languages[2] := 'FORTRAN';
+  languages[3] := 'Pascal';
+  languages[4] := 'ALGOL';
+  languages[5] := 'BASIC';
+  for i := 1 to 5 do
+    writeln(languages[i]);
 
 end.
